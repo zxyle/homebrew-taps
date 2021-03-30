@@ -61,9 +61,9 @@ class Builder < Formula
   def install
     ENV["PIP_DISABLE_PIP_VERSION_CHECK"] = "1"
     virtualenv_install_with_resources
-    # TODO manpage
-    # TODO bash_completion.install "contrib/completion/bash/docker-compose"
-    # TODO zsh_completion.install "contrib/completion/zsh/_docker-compose"
+    # TODO: manpage
+    # TODO: bash_completion.install "contrib/completion/bash/docker-compose"
+    # TODO: zsh_completion.install "contrib/completion/zsh/_docker-compose"
   end
 
   test do
