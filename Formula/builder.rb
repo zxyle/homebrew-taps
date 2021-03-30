@@ -3,8 +3,8 @@ class Builder < Formula
 
   desc "Quickly generate scaffolding projects"
   homepage "https://github.com/zxyle/builder"
-  url "https://github.com/zxyle/builder/archive/refs/tags/v0.0.1.zip"
-  sha256 "a9d535d0ce1d1ea382a015a44f7806c5d44cfb78c686d0f9e0a054a93ae8a75f"
+  url "https://github.com/zxyle/builder/archive/refs/tags/v0.0.1.tar.gz"
+  sha256 "df97ba7c9691b6547c614785ef9bde36c4ff80d4d39f29d92a9b983db79ebe73"
   license "MIT"
   # revision 3
   head "https://github.com/zxyle/builder.git"
