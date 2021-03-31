@@ -1,4 +1,7 @@
-# Zxyle Taps
+# zxyle Taps
+
+## Formula List
+- [builder](https://github.com/zxyle/builder) - Quickly generate scaffolding projects
 
 ## How do I install these formulae?
 `brew install zxyle/taps/<formula>`
