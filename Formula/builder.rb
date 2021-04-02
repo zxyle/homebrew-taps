@@ -3,7 +3,7 @@ class Builder < Formula
 
   desc "Quickly generate scaffolding projects"
   homepage "https://github.com/zxyle/builder"
-  url "https://zxyle-homebrew.oss-cn-hangzhou.aliyuncs.com/builder-0.0.1.tar.gz"
+  url "https://zxyle-homebrew.oss-cn-hangzhou.aliyuncs.com/tarballs/builder-0.0.1.tar.gz"
   sha256 "2892266b490f4004e198e24085a37a029635f1cdc366b1dee2524f7174c9ccf0"
   license "MIT"
   # revision 3
