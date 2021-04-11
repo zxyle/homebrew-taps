@@ -1,7 +1,7 @@
 # zxyle Taps
 
 ## Formula List
-- [builder](https://github.com/zxyle/builder) - Quickly generate scaffolding projects
+- [builder](https://github.com/zxyle/builder) - Quickly create batteries included project
 
 ## How do I install these formulae?
 `brew install zxyle/taps/<formula>`
