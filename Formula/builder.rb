@@ -3,8 +3,8 @@ class Builder < Formula
 
   desc "Quickly generate scaffolding projects"
   homepage "https://github.com/zxyle/builder"
-  url "https://zxyle-homebrew.oss-cn-hangzhou.aliyuncs.com/tarballs/builder-0.0.1.tar.gz"
-  sha256 "2892266b490f4004e198e24085a37a029635f1cdc366b1dee2524f7174c9ccf0"
+  url "https://zxyle-homebrew.oss-cn-hangzhou.aliyuncs.com/tarballs/builder-0.0.2.tar.gz"
+  sha256 "ad17a0613c377bc27b69ff4a6913e552ea5e25bd92a48b1e6589acb22c180518"
   license "MIT"
   # revision 3
   head "https://github.com/zxyle/builder.git"
@@ -14,7 +14,7 @@ class Builder < Formula
   # end
   bottle do
     root_url "https://zxyle-homebrew.oss-cn-hangzhou.aliyuncs.com/bottles"
-    sha256 cellar: :any_skip_relocation, big_sur: "da7f1c8fa5989504dbbd707c7feb4b849ba19802843fd985a7799cacec9408db"
+    sha256 cellar: :any_skip_relocation, big_sur: "c2f09c33f7dfe6ca9ff5dc9d15122f5994546c4f8e79f8fc695683b8e70d711d"
   end
 
   # bottle do
