@@ -84,7 +84,6 @@ class Builder < Formula
     sha256 "7238b538a6b45c4770ba4e8a9af2876f309a9919a077a5995c52c5116c29b770"
   end
 
-
   def install
     ENV["PIP_DISABLE_PIP_VERSION_CHECK"] = "1"
     virtualenv_install_with_resources
