@@ -1,10 +1,10 @@
 class Builder < Formula
   include Language::Python::Virtualenv
 
-  desc "Quickly generate scaffolding projects"
+  desc "Quickly create batteries included project"
   homepage "https://github.com/zxyle/builder"
-  url "https://zxyle-homebrew.oss-cn-hangzhou.aliyuncs.com/tarballs/builder-0.0.2.tar.gz"
-  sha256 "ad17a0613c377bc27b69ff4a6913e552ea5e25bd92a48b1e6589acb22c180518"
+  url "https://zxyle-homebrew.oss-cn-hangzhou.aliyuncs.com/tarballs/builder-0.0.3.tar.gz"
+  sha256 "b694ed69e15dfb8bb75daa40210802197e5a5da50cf72c4e0a19fc8738e77b15"
   license "MIT"
   # revision 3
   head "https://github.com/zxyle/builder.git"
@@ -14,27 +14,19 @@ class Builder < Formula
   # end
   bottle do
     root_url "https://zxyle-homebrew.oss-cn-hangzhou.aliyuncs.com/bottles"
-    sha256 cellar: :any_skip_relocation, big_sur: "c2f09c33f7dfe6ca9ff5dc9d15122f5994546c4f8e79f8fc695683b8e70d711d"
+    sha256 cellar: :any_skip_relocation, monterey: "e8597022c185f29d6374e2bc65e37247f92bcb3b3b0fa17cc0b99ad84a3142e0"
   end
-
-  # bottle do
-  #   cellar :any
-  #   sha256 "08525974a3404b234d7de572fea0f6095c3e6749df9fc192d571b1f815f00f3d" => :big_sur
-  #   sha256 "f147a50464261bd34bd8af04390584badc4241e9d37ca54332fe7dac07e1d570" => :arm64_big_sur
-  #   sha256 "94142a948bb19d5f80bf22d7c3aab0778ef48a0900ba1d8fd454fa070de31844" => :catalina
-  #   sha256 "8cb911e8ce3f82f81c7fde523269118c9986d2524fb7f6b45137636c7b9c418c" => :mojave
-  # end
 
   depends_on "python@3.9"
 
   resource "urllib3" do
-    url "https://mirrors.cloud.tencent.com/pypi/packages/cb/cf/871177f1fc795c6c10787bc0e1f27bb6cf7b81dbde399fd35860472cecbc/urllib3-1.26.4.tar.gz"
-    sha256 "e7b021f7241115872f92f43c6508082facffbd1c048e3c6e2bb9c2a157e28937"
+    url "https://mirrors.cloud.tencent.com/pypi/packages/80/be/3ee43b6c5757cabea19e75b8f46eaf05a2f5144107d7db48c7cf3a864f73/urllib3-1.26.7.tar.gz"
+    sha256 "4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece"
   end
 
   resource "idna" do
-    url "https://mirrors.cloud.tencent.com/pypi/packages/9f/24/1444ee2c9aee531783c031072a273182109c6800320868ab87675d147a05/idna-3.1.tar.gz"
-    sha256 "c5b02147e01ea9920e6b0a3f1f7bb833612d507592c837a6c49552768f4054e1"
+    url "https://mirrors.cloud.tencent.com/pypi/packages/62/08/e3fc7c8161090f742f504f40b1bccbfc544d4a4e09eb774bf40aafce5436/idna-3.3.tar.gz"
+    sha256 "9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"
   end
 
   resource "chardet" do
@@ -43,24 +35,55 @@ class Builder < Formula
   end
 
   resource "certifi" do
-    url "https://mirrors.cloud.tencent.com/pypi/packages/06/a9/cd1fd8ee13f73a4d4f491ee219deeeae20afefa914dfb4c130cfc9dc397a/certifi-2020.12.5.tar.gz"
-    sha256 "1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c"
+    url "https://mirrors.cloud.tencent.com/pypi/packages/6c/ae/d26450834f0acc9e3d1f74508da6df1551ceab6c2ce0766a593362d6d57f/certifi-2021.10.8.tar.gz"
+    sha256 "78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872"
   end
 
   resource "requests" do
-    url "https://mirrors.cloud.tencent.com/pypi/packages/6b/47/c14abc08432ab22dc18b9892252efaf005ab44066de871e72a38d6af464b/requests-2.25.1.tar.gz"
-    sha256 "27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"
+    url "https://mirrors.cloud.tencent.com/pypi/packages/e7/01/3569e0b535fb2e4a6c384bdbed00c55b9d78b5084e0fb7f4d0bf523d7670/requests-2.26.0.tar.gz"
+    sha256 "b8aa58f8cf793ffd8782d3d8cb19e66ef36f7aba4353eec859e74678b01b07a7"
   end
 
   resource "MarkupSafe" do
-    url "https://mirrors.cloud.tencent.com/pypi/packages/b9/2e/64db92e53b86efccfaea71321f597fa2e1b2bd3853d8ce658568f7a13094/MarkupSafe-1.1.1.tar.gz"
-    sha256 "29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"
+    url "https://mirrors.cloud.tencent.com/pypi/packages/bf/10/ff66fea6d1788c458663a84d88787bae15d45daa16f6b3ef33322a51fc7e/MarkupSafe-2.0.1.tar.gz"
+    sha256 "594c67807fb16238b30c44bdf74f36c02cdf22d1c8cda91ef8a0ed8dabf5620a"
   end
 
   resource "Jinja2" do
-    url "https://mirrors.cloud.tencent.com/pypi/packages/4f/e7/65300e6b32e69768ded990494809106f87da1d436418d5f1367ed3966fd7/Jinja2-2.11.3.tar.gz"
-    sha256 "a6d58433de0ae800347cab1fa3043cebbabe8baa9d29e668f1c768cb87a333c6"
+    url "https://mirrors.cloud.tencent.com/pypi/packages/91/a5/429efc6246119e1e3fbf562c00187d04e83e54619249eb732bb423efa6c6/Jinja2-3.0.3.tar.gz"
+    sha256 "611bb273cd68f3b993fabdc4064fc858c5b47a973cb5aa7999ec1ba405c87cd7"
   end
+
+  resource "python-editor" do
+    url "https://mirrors.cloud.tencent.com/pypi/packages/0a/85/78f4a216d28343a67b7397c99825cff336330893f00601443f7c7b2f2234/python-editor-1.0.4.tar.gz"
+    sha256 "51fda6bcc5ddbbb7063b2af7509e43bd84bfc32a4ff71349ec7847713882327b"
+  end
+
+  resource "blessed" do
+    url "https://mirrors.cloud.tencent.com/pypi/packages/d2/44/13a1a790ff7433ad60f5d1a4867810e4411757ccc58fb1bf91465840d6ce/blessed-1.19.0.tar.gz"
+    sha256 "4db0f94e5761aea330b528e84a250027ffe996b5a94bf03e502600c9a5ad7a61"
+  end
+
+  resource "readchar" do
+    url "https://mirrors.cloud.tencent.com/pypi/packages/16/2b/0cd0ba53d6dcdc4d69dcff68970c9b1347cc1d7f1c17ed4c15ec3a71a6e5/readchar-3.0.4.tar.gz"
+    sha256 "3ce642ade5b61efee273b3c4bf55c77a84398178842627c74fcb796e1666ab13"
+  end
+
+  resource "six" do
+    url "https://mirrors.cloud.tencent.com/pypi/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz"
+    sha256 "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
+  end
+
+  resource "wcwidth" do
+    url "https://mirrors.cloud.tencent.com/pypi/packages/89/38/459b727c381504f361832b9e5ace19966de1a235d73cdbdea91c771a1155/wcwidth-0.2.5.tar.gz"
+    sha256 "c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"
+  end
+
+  resource "inquirer" do
+    url "https://zxyle-homebrew.oss-cn-hangzhou.aliyuncs.com/other/inquirer-3.0.0.tar.gz"
+    sha256 "7238b538a6b45c4770ba4e8a9af2876f309a9919a077a5995c52c5116c29b770"
+  end
+
 
   def install
     ENV["PIP_DISABLE_PIP_VERSION_CHECK"] = "1"
